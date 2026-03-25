@@ -1,0 +1,59 @@
+export function LogoIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 44 44"
+      fill="none"
+      aria-hidden="true"
+    >
+      <line
+        x1="22"
+        y1="3"
+        x2="22"
+        y2="12"
+        stroke="#7EC8E3"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+      />
+      <line
+        x1="16"
+        y1="7.5"
+        x2="28"
+        y2="7.5"
+        stroke="#7EC8E3"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+      />
+      <rect
+        x="12"
+        y="12"
+        width="20"
+        height="26"
+        rx="3"
+        fill="rgba(46,108,176,0.18)"
+        stroke="#5B9BD5"
+        strokeWidth="0.8"
+      />
+      <line
+        x1="22"
+        y1="16"
+        x2="22"
+        y2="32"
+        stroke="#A8D8EA"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        strokeDasharray="2 2.5"
+      />
+      <line
+        x1="15"
+        y1="22"
+        x2="29"
+        y2="22"
+        stroke="#A8D8EA"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        strokeDasharray="2 2.5"
+      />
+    </svg>
+  );
+}
