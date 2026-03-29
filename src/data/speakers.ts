@@ -1,3 +1,7 @@
+import pabloBorgesImg from "../assets/IrmãoPabloBorges.jpeg";
+import rossêImg from "../assets/IrmãoRossê.jpeg";
+import maicoAvilaImg from "../assets/IrmãoMaicoAvila.jpeg";
+
 export interface Speaker {
   name: string;
   role: string;
@@ -7,18 +11,21 @@ export interface Speaker {
 
 export const speakers: Speaker[] = [
   {
-    name: "Pastor João Silva",
-    role: "Igreja Vida Nova · São Paulo",
-    bio: "Fundador da Igreja Vida Nova, com mais de 20 anos no ministério de ensino bíblico e discipulado.",
+    name: "Irmão Pablo Borges",
+    role: "Ministério Finanças",
+    bio: "Especialista em organização financeira pessoal e familiar, com experiência em educação financeira cristã. Dedicado a ensinar homens a gerenciar sábia e biblicamente suas finanças.",
+    image: pabloBorgesImg,
   },
   {
-    name: "Pastora Maria Costa",
-    role: "Ministério Ágape · Rio de Janeiro",
-    bio: "Ministra com foco em família e cura interior. Autora de três livros sobre restauração espiritual.",
+    name: "Irmão Maico Avila",
+    role: "Ministério Pregação",
+    bio: "Evangelista com fervor pela palavra de Deus e dedicação ao reino de Cristo. Traz testemunho poderoso de fé e compromisso com a missão cristã.",
+    image: maicoAvilaImg,
   },
   {
-    name: "Pr. André Ferreira",
-    role: "Casa de Deus · Curitiba",
-    bio: "Evangelista e missionário com obra em mais de 15 países e forte unção em sinais e maravilhas.",
+    name: "Irmão Rossê",
+    role: "Ministério Palavra",
+    bio: "Homem de Deus dedicado ao ensino da palavra com sabedoria e unção do Espírito Santo. Ministra com poder transformador para equipar os homens no seu chamado.",
+    image: rossêImg,
   },
 ];

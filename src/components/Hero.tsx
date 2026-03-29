@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Badge } from "./ui/Badge";
 
-const badges = ["Entrada Gratuita", "Canguçu, RS", "3 Palestrantes"];
+const badges = ["Entrada Livre", "12 de Abril", "09h às 16h30"];
 
 export function Hero() {
   return (
@@ -14,7 +14,7 @@ export function Hero() {
         className="inline-flex items-center gap-3 text-[0.68rem] uppercase tracking-[0.22em] text-acento mb-6"
       >
         <span className="block w-7 h-px bg-acento" />
-        Conferência &nbsp;&middot;&nbsp; 26, 27 &amp; 28 de Abril de 2026
+        Seminário de Homens &nbsp;&middot;&nbsp; 12 de Abril de 2026
         <span className="block w-7 h-px bg-acento" />
       </motion.div>
 
@@ -25,9 +25,9 @@ export function Hero() {
         transition={{ duration: 1.0, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
         className="font-serif text-[clamp(3.5rem,9vw,7.5rem)] font-light leading-[0.93] text-branco"
       >
-        Mover
+        Organização
         <br />
-        <em className="italic text-acento2">Canguçu</em>
+        <em className="italic text-acento2">Financeira</em>
       </motion.h1>
 
       {/* Decorative rule */}
@@ -45,8 +45,7 @@ export function Hero() {
         transition={{ duration: 0.7, delay: 0.95, ease: "easeOut" }}
         className="text-base font-light text-dim max-w-[460px] leading-[1.85]"
       >
-        Dois dias de pregações transformadoras, louvor e encontros profundos com
-        a Palavra de Deus.
+        Um dia de pregação, testemunho e comunhão para equipar o homem na sua missão. Traz paz espiritual à vida financeira.
       </motion.p>
 
       {/* Badges */}

@@ -14,48 +14,55 @@ export interface ScheduleDay {
 
 export const schedule: ScheduleDay[] = [
   {
-    label: "Sábado · 26 de Abril",
+    label: "Sábado · 12 de Abril",
     items: [
       {
         time: "09h",
         period: "manhã",
-        speaker: "Pastor João Silva",
-        topic: '"Avivamento começa em você"',
-        description:
-          "O despertar espiritual pessoal como ponto de partida para a transformação comunitária.",
-        tag: "Abertura",
+        speaker: "Entrada",
+        topic: '"Acolhimento e Organização"',
+        description: "Recepção e acolhimento dos participantes do Seminário de Homens. Entrada Livre.",
+        tag: "Entrada",
+      },
+      {
+        time: "09:30h",
+        period: "manhã",
+        speaker: "Irmão Pablo Borges",
+        topic: '"Organização Financeira — Traz Paz Espiritual"',
+        description: "Pregação sobre finanças pessoais e familiar, equipando o homem cristão para uma vida financeira sbia e abençoada.",
+        tag: "Pregação",
+      },
+      {
+        time: "12h",
+        period: "tarde",
+        speaker: "Almoço",
+        topic: '"Confraternização Fraterna"',
+        description: "Almoço comunitário com os irmãos para comunhão e partilha.",
+        tag: "Almoço",
       },
       {
         time: "14h",
         period: "tarde",
-        speaker: "Pastora Maria Costa",
-        topic: '"Família restaurada, nação transformada"',
-        description:
-          "A restauração do núcleo familiar como base para um Brasil renovado na fé.",
-        tag: "Ensinamento",
+        speaker: "Irmão Rossê",
+        topic: '"Palavra e Testimunho"',
+        description: "Ministraçao da palavra para fortalecimento espiritual e capacitação para a missão cristã.",
+        tag: "Pregação",
       },
       {
-        time: "19h",
-        period: "noite",
-        speaker: "Pr. André Ferreira",
-        topic: '"O poder do Espírito Santo"',
-        description:
-          "Culto de louvor e pregação sobre os dons espirituais, com momento especial de oração.",
-        tag: "Culto",
+        time: "15h",
+        period: "tarde",
+        speaker: "Irmão Maico Avila",
+        topic: '"Fé em Ação"',
+        description: "Pregação com testimonho poderoso sobre o poder transformador de Cristo na vida do homem.",
+        tag: "Pregação",
       },
-    ],
-  },
-  {
-    label: "Domingo · 27 de Abril",
-    items: [
       {
-        time: "10h",
-        period: "manhã",
-        speaker: "Todos os Palestrantes",
-        topic: '"Culto de Encerramento"',
-        description:
-          "Grande culto final com participação de todos os ministros, bênção e envio missionário.",
-        tag: "Encerramento",
+        time: "16:30h",
+        period: "tarde",
+        speaker: "Café",
+        topic: '"Descanso e Comunhão"',
+        description: "Café comunitário - momento de confraternização e comunhão entre os irmãos.",
+        tag: "Coffee Break",
       },
     ],
   },

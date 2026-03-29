@@ -14,7 +14,7 @@ export function SpeakerCard({ speaker }: SpeakerCardProps) {
         <img
           src={speaker.image}
           alt={speaker.name}
-          className="w-full aspect-[3/2] object-cover relative z-[1]"
+          className="w-full aspect-[3/2] object-cover object-top relative z-[1]"
           loading="lazy"
         />
       ) : (
