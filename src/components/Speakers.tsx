@@ -7,7 +7,7 @@ export function Speakers() {
   return (
     <section
       id="palestrantes"
-      className="relative z-1 max-w-[1100px] mx-auto px-8 py-24"
+      className="relative z-1 max-w-[1100px] mx-auto px-8 pt-14 pb-24"
     >
       <FadeIn>
         <SectionHeading eyebrow="Conheça os convidados" title="Palestrantes" />

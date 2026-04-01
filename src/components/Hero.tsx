@@ -81,6 +81,16 @@ export function Hero() {
           />
         </div>
       </motion.div>
+
+      <motion.a
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 1.35, ease: "easeOut" }}
+        href="/ingressos"
+        className="mt-7 inline-flex items-center justify-center gap-2 rounded-full border border-celeste/45 bg-celeste/12 px-6 py-3 text-[0.78rem] md:px-9 md:py-3.5 md:text-[0.9rem] uppercase tracking-[0.14em] text-gelo no-underline transition-colors duration-300 hover:bg-celeste/24 hover:text-branco"
+      >
+        Fazer inscricao
+      </motion.a>
     </section>
   );
 }

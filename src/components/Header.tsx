@@ -69,7 +69,7 @@ export function Header({ isTicketsPage = false }: HeaderProps) {
   const navLinks = homeNavLinks;
   const ctaLink = isTicketsPage
     ? { href: "/", label: "Inicio" }
-    : { href: "/ingressos", label: "Ingressos" };
+    : null;
 
   const brandHref = isTicketsPage ? "/" : "#inicio";
 
@@ -121,12 +121,14 @@ export function Header({ isTicketsPage = false }: HeaderProps) {
         </nav>
       )}
 
-      <a
-        href={ctaLink.href}
-        className="inline-flex items-center justify-center rounded-full border border-celeste/40 bg-celeste/12 px-3.5 sm:px-4 py-1.5 sm:py-2 text-[0.65rem] sm:text-[0.72rem] uppercase tracking-[0.14em] text-gelo no-underline transition-colors duration-300 hover:bg-celeste/24 hover:text-branco"
-      >
-        {ctaLink.label}
-      </a>
+      {ctaLink && (
+        <a
+          href={ctaLink.href}
+          className="inline-flex items-center justify-center rounded-full border border-celeste/40 bg-celeste/12 px-3.5 sm:px-4 py-1.5 sm:py-2 text-[0.65rem] sm:text-[0.72rem] uppercase tracking-[0.14em] text-gelo no-underline transition-colors duration-300 hover:bg-celeste/24 hover:text-branco"
+        >
+          {ctaLink.label}
+        </a>
+      )}
     </motion.header>
   );
 }
