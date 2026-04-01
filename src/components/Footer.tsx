@@ -12,10 +12,32 @@ export function Footer() {
         <p className="text-[0.78rem] text-dim leading-8">
           Av. 20 de Setembro, 246 &middot; Canguçu, RS
           <br />
-          (53) 99999-9999 &nbsp;&middot;&nbsp; contato@igrejadagraca.com.br
+          Cultos: Terças às 14h &middot; Quintas e Sábados às 19h30
         </p>
+        <a
+          href="https://www.instagram.com/movercangucu?igsh=MXZqa2I5cDNqYmFyNw=="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 mt-5 rounded-full border border-celeste/30 bg-celeste/8 px-4 py-2 text-[0.78rem] text-gelo no-underline transition-colors duration-300 hover:bg-celeste/16 hover:text-branco"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            className="size-4.5"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
+          </svg>
+          Instagram
+        </a>
         <p className="text-[0.7rem] text-dim/35 mt-4">
-          &copy; 2025 Igreja da Graça
+          &copy; Igreja Mover Canguçu
         </p>
       </footer>
     </FadeIn>
