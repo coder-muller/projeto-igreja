@@ -6,7 +6,6 @@ const homeNavLinks = [
   { href: "#inicio", label: "Inicio" },
   { href: "#palestrantes", label: "Palestrantes" },
   { href: "#programacao", label: "Programação" },
-  { href: "/ingressos", label: "Ingressos" },
 ];
 
 interface HeaderProps {
@@ -67,10 +66,8 @@ function handleNavClick(event: MouseEvent<HTMLAnchorElement>, href: string) {
 }
 
 export function Header({ isTicketsPage = false }: HeaderProps) {
-  const navLinks = isTicketsPage
-    ? [{ href: "/", label: "Voltar ao Início" }]
-    : homeNavLinks;
-  const mobileCta = isTicketsPage
+  const navLinks = homeNavLinks;
+  const ctaLink = isTicketsPage
     ? { href: "/", label: "Inicio" }
     : { href: "/ingressos", label: "Ingressos" };
 
@@ -104,29 +101,31 @@ export function Header({ isTicketsPage = false }: HeaderProps) {
         </div>
       </a>
 
-      <nav className="flex gap-10 max-sm:hidden">
-        {navLinks.map((link) => (
-          <a
-            key={link.href}
-            href={link.href}
-            onClick={
-              link.href.startsWith("#")
-                ? (event) => handleNavClick(event, link.href)
-                : undefined
-            }
-            className="group relative text-[0.76rem] uppercase tracking-[0.14em] text-gelo no-underline pb-0.5 transition-colors duration-300 hover:text-branco"
-          >
-            {link.label}
-            <span className="absolute bottom-0 left-0 h-px w-0 bg-acento transition-all duration-350 ease-in-out group-hover:w-full" />
-          </a>
-        ))}
-      </nav>
+      {!isTicketsPage && (
+        <nav className="flex gap-10 max-sm:hidden">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={
+                link.href.startsWith("#")
+                  ? (event) => handleNavClick(event, link.href)
+                  : undefined
+              }
+              className="group relative text-[0.76rem] uppercase tracking-[0.14em] text-gelo no-underline pb-0.5 transition-colors duration-300 hover:text-branco"
+            >
+              {link.label}
+              <span className="absolute bottom-0 left-0 h-px w-0 bg-acento transition-all duration-350 ease-in-out group-hover:w-full" />
+            </a>
+          ))}
+        </nav>
+      )}
 
       <a
-        href={mobileCta.href}
-        className="sm:hidden inline-flex items-center justify-center rounded-full border border-celeste/30 bg-celeste/10 px-3 py-1.5 text-[0.65rem] uppercase tracking-[0.14em] text-gelo no-underline transition-colors duration-300 hover:bg-celeste/20 hover:text-branco"
+        href={ctaLink.href}
+        className="inline-flex items-center justify-center rounded-full border border-celeste/40 bg-celeste/12 px-3.5 sm:px-4 py-1.5 sm:py-2 text-[0.65rem] sm:text-[0.72rem] uppercase tracking-[0.14em] text-gelo no-underline transition-colors duration-300 hover:bg-celeste/24 hover:text-branco"
       >
-        {mobileCta.label}
+        {ctaLink.label}
       </a>
     </motion.header>
   );
