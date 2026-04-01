@@ -70,6 +70,9 @@ export function Header({ isTicketsPage = false }: HeaderProps) {
   const navLinks = isTicketsPage
     ? [{ href: "/", label: "Voltar ao Início" }]
     : homeNavLinks;
+  const mobileCta = isTicketsPage
+    ? { href: "/", label: "Inicio" }
+    : { href: "/ingressos", label: "Ingressos" };
 
   const brandHref = isTicketsPage ? "/" : "#inicio";
 
@@ -118,6 +121,13 @@ export function Header({ isTicketsPage = false }: HeaderProps) {
           </a>
         ))}
       </nav>
+
+      <a
+        href={mobileCta.href}
+        className="sm:hidden inline-flex items-center justify-center rounded-full border border-celeste/30 bg-celeste/10 px-3 py-1.5 text-[0.65rem] uppercase tracking-[0.14em] text-gelo no-underline transition-colors duration-300 hover:bg-celeste/20 hover:text-branco"
+      >
+        {mobileCta.label}
+      </a>
     </motion.header>
   );
 }
