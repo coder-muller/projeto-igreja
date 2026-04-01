@@ -1,11 +1,15 @@
 import { motion } from "motion/react";
 import { Badge } from "./ui/Badge";
+import arteEventoImg from "../assets/ArteSeminario.png";
 
-const badges = ["Entrada Livre", "12 de Abril", "09h às 16h30"];
+const badges = ["R$30,00", "12 de Abril", "09h"];
 
 export function Hero() {
   return (
-    <section className="relative z-1 min-h-screen flex flex-col items-center justify-center px-8 py-24 pt-24 text-center">
+    <section
+      id="inicio"
+      className="relative z-1 min-h-screen flex flex-col items-center justify-center px-8 py-24 pt-24 text-center"
+    >
       {/* Eyebrow */}
       <motion.div
         initial={{ opacity: 0, y: 14 }}
@@ -60,47 +64,21 @@ export function Hero() {
         ))}
       </motion.div>
 
-      {/* Event art placeholder */}
+      {/* Event art */}
       <motion.div
         initial={{ opacity: 0, y: 22 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 1.25, ease: [0.16, 1, 0.3, 1] }}
-        className="mt-16 max-w-[800px] w-full relative"
+        className="mt-12 w-full max-w-[920px] mx-auto relative"
       >
         <div className="absolute -inset-px rounded-2xl z-[-1] bg-linear-to-br from-celeste/45 via-transparent to-acento/20" />
-        <div className="bg-profundo/60 rounded-2xl border border-celeste/10 p-10 min-h-[200px] flex items-center justify-center backdrop-blur-[10px]">
-          <div className="text-center">
-            <svg
-              width="44"
-              height="44"
-              viewBox="0 0 44 44"
-              fill="none"
-              className="opacity-28 mx-auto"
-              aria-hidden="true"
-            >
-              <rect
-                x="3"
-                y="7"
-                width="38"
-                height="30"
-                rx="3"
-                stroke="#7EC8E3"
-                strokeWidth="1.2"
-              />
-              <circle cx="14" cy="18" r="4" stroke="#7EC8E3" strokeWidth="1.2" />
-              <path
-                d="M3 30 L13 20 L21 28 L29 18 L41 31"
-                stroke="#7EC8E3"
-                strokeWidth="1.2"
-                strokeLinecap="round"
-              />
-            </svg>
-            <p className="text-[0.78rem] text-dim italic mt-3">
-              <code className="bg-celeste/10 px-2 py-0.5 rounded text-[0.72rem] text-acento">
-                &lt;img src="arte-evento.jpg"&gt;
-              </code>
-            </p>
-          </div>
+        <div className="bg-profundo/60 rounded-2xl border border-celeste/10 p-3 sm:p-4 backdrop-blur-[10px]">
+          <img
+            src={arteEventoImg}
+            alt="Arte oficial do Seminário de Homens"
+            className="w-full h-auto block rounded-xl"
+            loading="eager"
+          />
         </div>
       </motion.div>
     </section>

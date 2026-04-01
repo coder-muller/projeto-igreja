@@ -1,5 +1,5 @@
 import pabloBorgesImg from "../assets/IrmãoPabloBorges.jpeg";
-import rossêImg from "../assets/IrmãoRossê.jpeg";
+import rossêImg from "../assets/IrmaoRossê.jpeg";
 import maicoAvilaImg from "../assets/IrmãoMaicoAvila.jpeg";
 
 export interface Speaker {
