@@ -2,12 +2,16 @@ import { motion } from "motion/react";
 import type { MouseEvent } from "react";
 import { LogoIcon } from "./icons/LogoIcon";
 
-const navLinks = [
+const homeNavLinks = [
   { href: "#inicio", label: "Inicio" },
   { href: "#palestrantes", label: "Palestrantes" },
   { href: "#programacao", label: "Programação" },
+  { href: "/ingressos", label: "Ingressos" },
 ];
 
+interface HeaderProps {
+  isTicketsPage?: boolean;
+}
 function smoothScrollToAnchor(targetId: string) {
   const targetSection = document.getElementById(targetId);
   if (!targetSection) {
@@ -62,7 +66,13 @@ function handleNavClick(event: MouseEvent<HTMLAnchorElement>, href: string) {
   smoothScrollToAnchor(targetId);
 }
 
-export function Header() {
+export function Header({ isTicketsPage = false }: HeaderProps) {
+  const navLinks = isTicketsPage
+    ? [{ href: "/", label: "Voltar ao Início" }]
+    : homeNavLinks;
+
+  const brandHref = isTicketsPage ? "/" : "#inicio";
+
   return (
     <motion.header
       initial={{ opacity: 0, y: -10 }}
@@ -71,10 +81,14 @@ export function Header() {
       className="sticky top-0 z-200 px-12 max-sm:px-5 py-4 flex items-center justify-between bg-noite/80 backdrop-blur-xl border-b border-celeste/14"
     >
       <a
-        href="#inicio"
+        href={brandHref}
         aria-label="Voltar ao início"
         className="flex items-center gap-3 no-underline"
-        onClick={(event) => handleNavClick(event, "#inicio")}
+        onClick={
+          isTicketsPage
+            ? undefined
+            : (event) => handleNavClick(event, "#inicio")
+        }
       >
         <LogoIcon className="size-11 shrink-0" />
         <div>
@@ -92,7 +106,11 @@ export function Header() {
           <a
             key={link.href}
             href={link.href}
-            onClick={(event) => handleNavClick(event, link.href)}
+            onClick={
+              link.href.startsWith("#")
+                ? (event) => handleNavClick(event, link.href)
+                : undefined
+            }
             className="group relative text-[0.76rem] uppercase tracking-[0.14em] text-gelo no-underline pb-0.5 transition-colors duration-300 hover:text-branco"
           >
             {link.label}

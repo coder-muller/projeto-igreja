@@ -17,13 +17,13 @@ export const speakers: Speaker[] = [
     image: pabloBorgesImg,
   },
   {
-    name: "Irmão Maico Avila",
+    name: "Irmão Rossê",
     role: "Ministério Pregação",
     bio: "Evangelista com fervor pela palavra de Deus e dedicação ao reino de Cristo. Traz testemunho poderoso de fé e compromisso com a missão cristã.",
     image: maicoAvilaImg,
   },
   {
-    name: "Irmão Rossê",
+    name: "Irmão Maico Avila",
     role: "Ministério Palavra",
     bio: "Homem de Deus dedicado ao ensino da palavra com sabedoria e unção do Espírito Santo. Ministra com poder transformador para equipar os homens no seu chamado.",
     image: rossêImg,
