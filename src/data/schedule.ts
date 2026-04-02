@@ -21,7 +21,7 @@ export const schedule: ScheduleDay[] = [
         period: "manhã",
         speaker: "Entrada",
         topic: '"Acolhimento e Organização"',
-        description: "Recepção e acolhimento dos participantes do Seminário de Homens. Entrada Livre.",
+        description: "Recepção e acolhimento dos participantes do Seminário de Homens.",
         tag: "Entrada",
       },
       {
