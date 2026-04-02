@@ -11,7 +11,7 @@ export function Schedule() {
       id="programacao"
       className="relative z-1 py-24 px-8 bg-linear-to-b from-transparent via-profundo/45 to-transparent"
     >
-      <div className="max-w-[880px] mx-auto">
+      <div className="max-w-220 mx-auto">
         <FadeIn>
           <SectionHeading
             eyebrow="Cronograma completo"

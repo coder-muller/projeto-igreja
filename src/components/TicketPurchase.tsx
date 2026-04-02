@@ -29,7 +29,7 @@ export function TicketPurchase() {
   }
 
   return (
-    <section id="inscricao" className="relative z-1 max-w-[980px] mx-auto px-8 py-24">
+    <section id="inscricao" className="relative z-1 max-w-245 mx-auto px-8 py-24">
       <FadeIn>
         <SectionHeading eyebrow="Inscrição Online" title="Garanta sua vaga" />
       </FadeIn>

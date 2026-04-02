@@ -95,7 +95,7 @@ export function Header({ isTicketsPage = false }: HeaderProps) {
           <div className="font-serif text-[1.35rem] font-semibold text-branco tracking-wide leading-tight">
             Igreja Mover
           </div>
-          <div className="text-[0.68rem] font-light text-acento uppercase tracking-[0.2em]">
+          <div className="hidden md:block text-[0.68rem] font-light text-acento uppercase tracking-[0.2em]">
             Pregando um evangelho puro e simples até que Cristo volte.
           </div>
         </div>
