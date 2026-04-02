@@ -45,13 +45,13 @@ export function TicketPurchase() {
 
           <div className="space-y-5">
             <div className="flex gap-4 items-start">
-              <div className="size-7 rounded-full border border-acento/45 text-acento text-xs font-semibold flex items-center justify-center mt-0.5">
+              <div className="shrink-0 size-7 rounded-full border border-acento/45 text-acento text-xs font-semibold flex items-center justify-center mt-0.5">
                 1
               </div>
-              <div className="flex-1">
+              <div className="flex-1 min-w-0">
                 <p className="text-cristal text-sm font-medium mb-2">Copie a chave PIX</p>
                 <div className="flex items-center gap-2 bg-noite/80 border border-celeste/15 rounded-xl px-3 sm:px-4 py-3">
-                  <span className="text-gelo text-sm flex-1 font-mono truncate">{PIX_KEY}</span>
+                  <span className="text-gelo text-xs sm:text-sm font-mono truncate min-w-0 flex-1">{PIX_KEY}</span>
                   <button
                     type="button"
                     onClick={handleCopyPix}
@@ -66,7 +66,7 @@ export function TicketPurchase() {
             <div className="w-px h-5 bg-celeste/18 ml-3.5" />
 
             <div className="flex gap-4 items-start">
-              <div className="size-7 rounded-full border border-acento/45 text-acento text-xs font-semibold flex items-center justify-center mt-0.5">
+              <div className="shrink-0 size-7 rounded-full border border-acento/45 text-acento text-xs font-semibold flex items-center justify-center mt-0.5">
                 2
               </div>
               <div>
@@ -80,7 +80,7 @@ export function TicketPurchase() {
             <div className="w-px h-5 bg-celeste/18 ml-3.5" />
 
             <div className="flex gap-4 items-start">
-              <div className="size-7 rounded-full border border-acento/45 text-acento text-xs font-semibold flex items-center justify-center mt-0.5">
+              <div className="shrink-0 size-7 rounded-full border border-acento/45 text-acento text-xs font-semibold flex items-center justify-center mt-0.5">
                 3
               </div>
               <div className="flex-1">
