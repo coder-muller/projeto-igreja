@@ -44,7 +44,7 @@ export const schedule: ScheduleDay[] = [
         time: "14h",
         period: "tarde",
         speaker: "Irmão Rossê",
-        topic: '"Palavra e Testimunho"',
+        topic: '"Palavra e Testemunho"',
         description: "Ministraçao da palavra para fortalecimento espiritual e capacitação para a missão cristã.",
         tag: "Pregação",
       },
@@ -53,7 +53,7 @@ export const schedule: ScheduleDay[] = [
         period: "tarde",
         speaker: "Irmão Maico Avila",
         topic: '"Fé em Ação"',
-        description: "Pregação com testimonho poderoso sobre o poder transformador de Cristo na vida do homem.",
+        description: "Pregação com testemunho poderoso sobre o poder transformador de Cristo na vida do homem.",
         tag: "Pregação",
       },
       {
